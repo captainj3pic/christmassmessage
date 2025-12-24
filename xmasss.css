@@ -1,0 +1,146 @@
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    max-width: 100%;
+    border: 24px solid transparent;
+    border-image: url('flower1.jpg') 10 round;
+    border-image-width: 6px;
+    background-color: #f2f2f2;
+  }
+    
+    @keyframes scroll {
+      0% { background-position: 0 0; }
+      100% { background-position: -100% 0; }
+    }
+
+
+      #bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+   header {
+    color: #f2f2f2;
+    background-image: url(Red\ Christmas\ Artistic\ Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    background-position: inherit;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -44px;
+    height: 159px;
+    width: 100%;
+    font-size: 14px;
+       }
+       header h2 {
+        text-decoration: wavy;
+        font-family: monospace;
+        font-weight: 900;
+       }
+      header i {
+        color: rgb(255, 242, 0);
+        font-size: 12px;
+      }
+
+
+
+
+.box-container {
+  margin-top: 12px;
+  margin-left: 42.5%;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.lid {
+  position: absolute;
+  width: 180%;
+  height: 180%;
+  transition: all 0.6s ease;
+}
+.lid {
+  z-index: 2;
+}
+
+.message {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  margin-top: -36px;
+  font-size: 8px;
+  color: rgb(255, 234, 0);
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.6s ease;
+  z-index: 3;
+}
+
+ .explode .lid {
+  transform: translateY(-200px) rotate(720deg) scale(0.3);
+  opacity: 0;
+ }
+
+ .explode .message {
+  opacity: 1;
+  transform: scale(1.2);
+ }
+
+ .contact {
+  margin-top: 67px;
+  background: crimson;
+  border-radius: 16px;
+  height: 86px;
+ }
+
+.contact input[type="text"] {
+  height: 46px;
+}
+.contact input[type="text"]::placeholder {
+  color: goldenrod;
+}
+.contact input[type="text"]:hover {
+  color: rgb(16, 0, 245);
+  text-decoration: bold;
+}
+ .contact input[type="text"], button {
+  background-color: dodgerblue;
+  outline: none;
+  border: 1px double skyblue;
+  border-radius: 6px;
+ }
+
+    .words {
+      text-align: center;
+      display: inherit;
+      align-items: center;
+      justify-content: center;
+    }
+    .words .p1 {
+      color: rgb(48, 236, 11);
+      background-color: rgba(220, 20, 60, 0.51);
+      margin-top: 66px;
+      border-right: 32px solid steelblue;
+      border-top: 26px solid slateblue;
+      border-left: 36px steelblue;
+
+    }
+        .words .p2 {
+          color: aliceblue;
+      background-color: rgba(220, 20, 60, 0.547);
+      border-right: 32px solid steelblue;
+      border-left: ;
+            border-top: 26px solid slateblue;
+
+        }

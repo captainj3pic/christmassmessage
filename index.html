@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width= device-width, initial-scale = 1.0" />
+        <title></title>
+        <link rel="stylesheet" href="xmasss.css" />
+    </head>
+  <body>
+
+    <main>
+    <header>
+        <h2>WISHING YOU A HAPPY MERRY CHRISTMASS <br />& <br />A HAPPY NEW YEAR</h2><br />
+          <i>The Great Reality Of Nature</i>
+          </header>
+   
+                    <div class="box-container" onclick="explodeBox()">   
+      <img class="lid" src="box.png" alt="lid" />
+      <div class="message"><b>&#127882;JUSTUS'S Family is Wishing You &#129395; &#127882;</b><i>a blessed Life
+        <br>MERRY CHRISTMASS & HAPPY NEW YEAR<button onclick="const v = document.getElementById('bgVideo');
+      v.muted = false; this.style.display ='none';"><img src="messg.jpg" width="94px" height="99px"></button></div>
+    
+</div>
+      <div class="words">
+        <p class="p1">
+          <b>Hi</b><br />
+          Daling you are the most precious person all over the earth<br />
+          am always happy to see you blessed in all that which you do<br />
+          in all of your life. Well the LORD JESUS CHRIST has blessed <br />
+          you & me with much abundantly grace to live to see this Christmass<br /> 
+          and he has also to see the comingnew YEAR 2026. GLORY TO HIM.<br /> AMEN
+          
+        </p>
+        <p class="p2">
+          <b>Merry Christmass & Happy new year</b><br />
+          I just want to wish you a happy Christmass and a blessed new YEAR <u>2026</u><br />
+          My lovely friends, may the year 2026<sup>new</sup> be a different year from<br />
+          all the other past years since you had come to this earth.<br /> <b style="color: rgb(246, 184, 0);">May the Year 2026 be:</b><br />
+          (1)Your Dreams & goals archievement year<br />
+           (2) Your Year of PROSPERITY<br />
+           (3) Your VictoriousYear over your enemies 
+        </p>
+      </div>
+                              <video controls style="height: 195px; width: 304px; margin-left: 6px;">
+             <source src="curtainsCLASIC.mp4" type="video/mp4"
+        </video>
+
+      </main>
+      <footer>
+      <div class="contact">
+        <input type="text" id="message" placeholder="Enter Your Name ..." />
+        <button onclick="sendToWhatssApp()">send<br /> &#128073;</button>
+      </div>
+                    <div class="autthor" style=" display: fixed; color: aliceblue; text-align: center; background-color: rgb(99, 0, 20);">
+       <img src="Cjosh.jpg" width="50px" height="50px" style="border-radius: 50px;"> &#169; Captain J<sup>3</sup><sub>S</sub>
+      </div>
+
+    </footer>
+
+                        <video autoplay muted loop id="bgVideo">
+             <source src="CHRISTMAS TREE.mp4" type="video/mp4"
+        </video>
+
+              <script>
+                function explodeBox() {
+                  document.querySelector('.box-container').classList.add('explode');
+                }
+
+                function sendToWhatssApp() {
+                  const message = document.getElementById("message").value;
+                  if (!message) {
+                    alert("Please write a Message first.");
+                    return;
+                  }
+                  const siteLink = `https://${window.location.host}`;
+                  const customText = "&#127876; sending you a merry christ & happy New Year &#127873 &#127882, &#128071";
+                  const fullMessage = `${customText} ${message}\n${siteLink}`;
+                  const encodedMessage = encodeURIComponent(fullMessage);
+                   const whatsappURL = `https://wa.me/?text=${encodedMessage}`;
+                   window.open(whatsappURL, "_blank");
+                }
+
+    </script>
+
+  </body>
+</html>  
