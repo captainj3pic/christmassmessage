@@ -72,8 +72,8 @@
                     alert("Please write a Message first.");
                     return;
                   }
-                  const siteLink = `https://${window.location.host}`;
-                  const customText = "&#127876; sending you a merry christ & happy New Year &#127873 &#127882, &#128071";
+                  const siteLink = `https://${window.location.host}/christmassmessage/`;
+                  const customText = "🎊🎊 sending you a merry christmass & happy New Year 🎄🎁🥳";
                   const fullMessage = `${customText} ${message}\n${siteLink}`;
                   const encodedMessage = encodeURIComponent(fullMessage);
                    const whatsappURL = `https://wa.me/?text=${encodedMessage}`;
@@ -83,4 +83,5 @@
     </script>
 
   </body>
+
 </html>  
